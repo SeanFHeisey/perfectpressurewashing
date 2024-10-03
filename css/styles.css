@@ -28,7 +28,7 @@ body {
 }
 
 .top-header .center .button i {
-    vertical-align: middle;
+    /* vertical-align: middle; */
     line-height: 50px;  
 }
 
