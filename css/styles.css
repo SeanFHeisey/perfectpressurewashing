@@ -31,6 +31,7 @@ body {
     line-height: 50px;
     font-size: 20px;
     position: relative;
+    color: rgb(0, 123, 255);
 }
 
 .top-header .center {
@@ -41,6 +42,11 @@ body {
 
 .top-header .center .button:hover {
     cursor: pointer;
+}
+
+.top-header .center .button:hover i {
+    color: black;
+    text-shadow: 3px 3px 4px rgba(221, 221, 221, 0.5);
 }
 
 .top-header .center .button:hover p {
