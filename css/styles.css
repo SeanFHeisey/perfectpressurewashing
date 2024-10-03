@@ -19,12 +19,17 @@ body {
 
 .top-header .center .button{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     background: none;
     border: none;
     font: bold 12pt 'Roboto', sans-serif;
     color: black;
     text-wrap: nowrap;
+}
+
+.top-header .center .button i {
+    vertical-align: middle;  /* Center the icon vertically */
+    /* line-height: 50px;   Same as button height for alignment */
 }
 
 .top-header .center {
