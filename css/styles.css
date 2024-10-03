@@ -1,18 +1,98 @@
-header {
-    position: fixed; /* Make the header stay in place */
-    top: 0;          /* Align it to the top of the page */
-    left: 0;         /* Align it to the left */
-    width: 100%;     /* Full width across the page */
-    background-color: #4CAF50; /* Background color */
-    color: white;    /* Text color */
-    text-align: center; /* Center align text */
-    padding: 10px 0; /* Add some padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow */
-    z-index: 1000;   /* Ensure the header stays above other elements */
+body {
+    margin: 0; /* space outside object */
+    padding: 0; /* space inside object */
+    width: 100%; /* width is always 100% on all device screens */
+    overflow-x: hidden; /* hides horizontal scroll bar */
 }
 
-/* Add some padding to the body content */
-body {
-    margin: 0; /* Remove default margin */
-    padding-top: 60px; /* Add padding to avoid overlap with header */
+header {
+    position: fixed; /* makes object not move when scrolling */
+    top: 0px; /* object is 0px from top of screen */
+    left: 0px; /* object is 0px from left of screen */
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* allows easy alignment for items in a container */          
+    align-items: center; /* align vertically */
+}
+
+header .fixed-logo {
+    width: 160px;
+    height: auto; /* adjusts height based off width */
+    padding-left: 56.19px;
+    padding-right: 56.19px;
+    margin-left: 5%;
+}
+
+header .fixed-center-buttons {
+    display: flex;
+    justify-content: center; /* align horizontally */
+    flex-grow: 1; /* since we already use flex to align we do this and spacing will work */
+}
+
+header .center {
+    /* spacing */
+    margin: 0 5px;
+    white-space: nowrap;
+
+    /* styling */
+    background: none;
+    border: none;
+    font: 20pt 'Open Sans', sans-serif;
+    color: black;
+}
+
+header .center:hover {
+    color: rgb(0, 123, 255);
+    cursor: pointer;
+    text-decoration: underline;
+    text-shadow: 3px 3px 4px rgba(221, 221, 221, 0.5);
+    transition: color 0.2s, text-decoration 0.2s, text-shadow 0.2s;
+}
+
+header .right {
+    /* spacing */
+    margin-right: auto;
+    white-space: nowrap;
+    margin-right: 5%; 
+
+    /* styling */
+    padding: 7px 40px;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 123, 255);
+    background-color: rgb(0, 123, 255);
+    font: Bold 20pt 'Open Sans', sans-serif;
+    color: white;
+}
+
+header .right:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 123, 255);
+    box-shadow: 4px 4px 8px rgba(163, 163, 163, 0.5);
+    transition: background-color, 0.2s, color 0.2s, box-shadow, 0.2s;
+}
+
+.sections {
+    height: 100px;
+    width: 100%;
+}
+
+section {
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+}
+
+#section1 {
+    background-color: #e4e4e4; 
+}
+
+#section2 {
+    background-color: #ffffff;
+}
+
+#section3 {
+    background-color: #e4e4e4;
 }
