@@ -30,6 +30,7 @@ body {
 .top-header .center .button i {
     line-height: 50px;
     font-size: 20px;
+    position: relative;
 }
 
 .top-header .center {
@@ -40,13 +41,12 @@ body {
 
 .top-header .center .button:hover {
     cursor: pointer;
+}
+
+.top-header .center .button:hover p {
     text-decoration: underline;
     text-shadow: 3px 3px 4px rgba(221, 221, 221, 0.5);
     transition: text-shadow 0.2s, text-decoration, 0.2s;
-}
-
-.top-header .center .button p:hover {
-    text-decoration: none;
 }
 
 .main-header {
