@@ -14,8 +14,5 @@ function spawnHeaderIcons() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('test');
-    window.onload = function() {
-        spawnHeaderIcons();
-    };
+    spawnHeaderIcons();
 });
