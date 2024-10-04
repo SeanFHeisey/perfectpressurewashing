@@ -15,6 +15,7 @@ body {
     height: 50px;
     background-color: white;
     z-index: 2;
+    transition: top 0.3s ease; /* for smoothness in js */
 }
 
 .top-header .center .button{
