@@ -1,9 +1,12 @@
 function topHeader() {
-    const header = document.getElementById('top-header');
+    const headerTop = document.getElementById('top-header');
+    const headerMain = document.getElementById('main-header');
     if (window.scrollY === 0) {
-        header.style.top = '0'; // show header
+        headerTop.style.top = '0px'; // show header
+        headerMain.style.top = '50px';
     } else {
-        header.style.top = '-50px'; // hide header
+        headerTop.style.top = '-50px'; // hide header
+        headerMain.style.top = '-50px';
     }
 }
 
