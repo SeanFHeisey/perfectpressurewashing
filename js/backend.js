@@ -6,7 +6,7 @@ function topHeader() {
         headerMain.style.top = '50px';
     } else {
         headerTop.style.top = '-50px'; // hide header
-        headerMain.style.top = '-50px';
+        headerMain.style.top = '0px';
     }
 }
 
