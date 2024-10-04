@@ -14,6 +14,8 @@ function changeHeaderIcons() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    changeHeaderIcons();
+    window.onload = function() {
+        changeHeaderIcons();
+    };
 });
 
