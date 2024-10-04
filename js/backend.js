@@ -1,4 +1,4 @@
-function changeHeaderIcons() {
+function spawnHeaderIcons() {
     const iconBookmark = document.getElementById('bookmark');
     const iconMail = document.getElementById('mail');
     const iconPhone = document.getElementById('phone');
@@ -14,8 +14,8 @@ function changeHeaderIcons() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('test');
     window.onload = function() {
-        changeHeaderIcons();
+        spawnHeaderIcons();
     };
 });
-
