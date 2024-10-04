@@ -15,7 +15,7 @@ body {
     height: 50px;
     background-color: white;
     z-index: 2;
-    transition: top 0.3s ease; /* for smoothness in js */
+    transition: top 0.1s ease; /* for smoothness in js */
 }
 
 .top-header .center .button{
@@ -67,7 +67,7 @@ body {
     display: flex; /* allows easy alignment for items in a container */          
     align-items: center; /* align vertically */
     z-index: 3;
-    transition: top 0.3s ease; /* for smoothness in js */
+    transition: top 0.1s ease; /* for smoothness in js */
 }
 
 .main-header .center {
