@@ -9,5 +9,5 @@ function topHeader() {
 
 document.addEventListener('DOMContentLoaded', function() {
     topHeader();
-    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', topHeader);
 });
