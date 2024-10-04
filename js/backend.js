@@ -8,5 +8,5 @@ function topHeader() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    window.addEventListener('scroll', topHeader());
+    window.addEventListener('scroll', topHeader);
 });
