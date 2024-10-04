@@ -1,13 +1,9 @@
 function topHeader() {
     const headerTop = document.getElementById('top-header');
     const headerMain = document.getElementById('main-header');
-    if (window.scrollY === 0) {
-        headerTop.style.top = '0px'; // show header
-        headerMain.style.top = '50px';
-    } else {
-        headerTop.style.top = '-50px'; // hide header
-        headerMain.style.top = '0px';
-    }
+    const scrollPosition = window.scrollY;
+    headerTop.style.top = `${Math.max(0, -scrollPosition)}px`; // Top header scrolls out
+    headerMain.style.top = `${Math.max(50 - scrollPosition, 0)}px`; // Main header adjusts as well
 }
 
 document.addEventListener('DOMContentLoaded', function() {
