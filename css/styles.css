@@ -29,7 +29,7 @@ body {
 
 .top-header .center .button i {
     line-height: 50px;
-    font-size: 20px;
+    font-size: 22px;
     position: relative;
     color: rgb(0, 123, 255);
 }
@@ -46,7 +46,7 @@ body {
 
 .top-header .center .button:hover i {
     color: black;
-    text-shadow: 3px 3px 4px rgba(221, 221, 221, 0.5);
+    text-shadow: 4px 4px 6px rgba(196, 196, 196, 0.5);
 }
 
 .top-header .center .button:hover p {
