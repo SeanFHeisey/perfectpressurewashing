@@ -72,7 +72,7 @@ body {
     display: flex;
     justify-content: center; /* align horizontally */
     flex-grow: 1; /* since we already use flex to align we do this and spacing will work */
-    gap: 50px;
+    gap: 3vw;
 }
 
 .main-header .center .logo {
@@ -80,6 +80,8 @@ body {
     height: auto; /* adjusts height based off width */
     padding-left: 56.19px;
     padding-right: 56.19px;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .main-header .center .button-center {
@@ -106,6 +108,8 @@ body {
     font: Bold 20pt 'Open Sans', sans-serif;
     color: white;
     white-space: nowrap;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .main-header .button-right:hover {

@@ -1,18 +1,13 @@
-function spawnHeaderIcons() {
-    const iconBookmark = document.getElementById('bookmark');
-    const iconMail = document.getElementById('mail');
-    const iconPhone = document.getElementById('phone');
-    if (iconBookmark) {
-        console.log('gooda');
-    }
-    if (iconMail) {
-        console.log('goodb');
-    }
-    if (iconPhone) {
-        console.log('goodc');
+function topHeader() {
+    const header = document.getElementById('top-header');
+    if (window.scrollY === 0) {
+        header.style.top = '0'; // show header
+    } else {
+        header.style.top = '-50px'; // hide header
     }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    spawnHeaderIcons();
+    topHeader();
+    window.addEventListener('scroll', checkScroll);
 });
