@@ -40,6 +40,10 @@ body {
     flex-grow: 1;
 }
 
+.top-header .center .href {
+    text-decoration: none;
+}
+
 .top-header .center .button:hover {
     cursor: pointer;
 }
@@ -121,7 +125,7 @@ body {
 }
 
 .sections {
-    height: 100px;
+    height: 150px;
     width: 100%;
     z-index: 1;
 }
@@ -133,6 +137,7 @@ section {
 }
 
 #section1 {
+    height: calc(100vh - 50px);
     background-color: #e4e4e4; 
 }
 
